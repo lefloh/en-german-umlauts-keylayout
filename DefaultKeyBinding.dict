@@ -1,0 +1,9 @@
+{
+  "~a" = ("insertText:", "ä");
+  "~u" = ("insertText:", "ü");
+  "~o" = ("insertText:", "ö");
+  "~A" = ("insertText:", "Ä");
+  "~U" = ("insertText:", "Ü");
+  "~O" = ("insertText:", "Ö");
+  "~s" = ("insertText:", "ß");
+}
