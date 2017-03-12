@@ -1,6 +1,7 @@
 # English keyboard layout with german umlauts
 
 English keyboard layout and keyBindings with german umlauts for MacOS.
+See also [this blog post][blog].
 
 ## Keyboard layout
 
@@ -8,8 +9,16 @@ English keyboard layout and keyBindings with german umlauts for MacOS.
 cp -r en-german-umlauts.bundle ~/Library/Keyboard\ Layouts/
 ```
 
-This installs a full keyboard layout for current user.
-This layout maps german vocals like `alt + a` to `ä`, `alt + s` to `ß` and `alt + e` to `€`.
+This installs a english keyboard layout for current user with following modifiactions:
+
+```sh
+⌥ Option + a -> ä
+⌥ Option + o -> ö
+⌥ Option + u -> ü
+⌥ Option + s -> ß
+⌥ Option + e -> €
+```
+
 You have to enable it in `System Preferences -> Keyboard -> Input Sources -> English -> English German Umlauts`.
 
 MacOS won't accept this keyboard layout as default.
@@ -29,12 +38,12 @@ More information on [Ask Different][ask-different].
 
 I suggest using [Ukelele][ukelele] if you want to create a custom keyboard layout on your own.
 
-## KeyBindings
+## Key bindings
 
 This is an alternative if you want to easily remap keys on your own without
 creating a full keyboard layout.
-Unfortunately you can't remap dead keys so `alt + a` is mapped to `ä` but for
-`ü` you have to type `alt + u` and `u`.
+Unfortunately you can't remap dead keys so `⌥ Option + a` is mapped to `ä` but for
+`ü` you have to type `⌥ Option + u` and `u`.
 
 ```sh
 # Backup if already present
@@ -44,9 +53,10 @@ $ cp DefaultKeyBinding.dict ~/Library/KeyBindings/
 
 MacOS will also accept this file written in plist syntax.
 
-More information in [Text System Defaults and Key Bindings][keybindings] and [OS X Notes][osx-notes].
+More information in [Text System Defaults and Key Bindings][keybindings] and [osxnotes.net][osxnotes].
 
+ [blog]: https://medium.com/@lefloh/switching-from-qwertz-to-qwerty-on-macos-18304ab67467
  [ask-different]: http://apple.stackexchange.com/questions/44921
  [ukelele]: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele
  [keybindings]: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
- [osx-notes]: http://osxnotes.net/keybindings.html
+ [osxnotes]: http://osxnotes.net/keybindings.html
