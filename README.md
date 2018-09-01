@@ -37,6 +37,12 @@ MacOS will instantly restore the plist file if you switch to another application
 with default keyboard after editing the file or if you don't reboot with `sudo`.
 More information on [Ask Different][ask-different].
 
+### Update 2018
+
+Seem like the method above does not work on a 2018 MBP with TouchBar and High Sierra.
+I had more luck with moving the keyboard bundle to the root layout folder `/Library/Keyboard\ Layouts/`.
+Editing `com.apple.HIToolbox.plist` was not necessary then.
+
 I suggest using [Ukelele][ukelele] if you want to create a custom keyboard layout on your own.
 
 ## Key bindings
