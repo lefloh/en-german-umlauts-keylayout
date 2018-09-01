@@ -27,7 +27,7 @@ This can be fixed on MacOS Sierra with following steps:
 
 * Double-check if English with German Umlauts is currently selected.
 * `vi ~/Library/Preferences/com.apple.HIToolbox.plist`
-  If the `plist` file is not human readable convert it: `plutil -convert xml1 ~/Library/Preferences/com.apple.HIToolbox.plist`
+* If the `plist` file is not human readable convert it: `plutil -convert xml1 ~/Library/Preferences/com.apple.HIToolbox.plist`
 * Remove the default fallback from `AppleEnabledInputSources`.
   If there is an `AppleDefaultAsciiInputSource` key, remove it.
 * `sudo reboot`  
